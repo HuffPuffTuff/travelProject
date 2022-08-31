@@ -3,12 +3,13 @@ const burger = document.querySelector( '.header__burger' );
 const close = document.querySelector( '.menu__close-button' );
 const menuList = document.querySelectorAll( '.header__list li');
 const shading = document.querySelector( '.shading' );
-import {screenWidth} from './anotherSlider.js';
-console.log(screenWidth);
+import {screenWidth, checkScreenWidth} from './anotherSlider.js';
 
 const toggleMenu = () => {
   menu.classList.toggle( 'menu__open' );
-  shading.classList.toggle( 'active' );
+  if (checkScreenWidth(screenWidth) === true) {
+    shading.classList.toggle( 'active' );
+  }
 }
 
 close.addEventListener( 'click', toggleMenu );
@@ -26,7 +27,6 @@ menuList.forEach( function( button, index ) {
   }
 });
 
-
 const popUp = document.querySelector( '.login__popup' );
 const loginButton = document.querySelector( '.login__button' );
 
@@ -42,11 +42,8 @@ document.addEventListener('click', (e) => {
 
 loginButton.addEventListener( 'click', (e) => {
   shading.classList.add( 'active' );
-  // popUp.classList.remove('hidden');
-  popUp.classList.add('popup-visible')
+  popUp.classList.add('popup-visible');
 });
-
-
 
 const changePopUp = () => {
   const popUpForm = document.querySelector('.popup-form');
@@ -65,7 +62,7 @@ const changePopUp = () => {
 
     popUpRegisters.forEach( (element) => {
       element.classList.remove('hidden');
-    })
+    });
   });
 
   logIn.addEventListener('click', (e) => {
@@ -78,7 +75,7 @@ const changePopUp = () => {
 
     popUpRegisters.forEach( (element) => {
       element.classList.add('hidden');
-    })
+    });
   });
 
   const enterButton = popUpForm.querySelector('.button-enter')
@@ -87,12 +84,7 @@ const changePopUp = () => {
     const emailValue = document.getElementById('email').value;
     const passwordValue = document.getElementById('password').value;
     alert(`E-mail: ${emailValue}\nPassword: ${passwordValue}`)
-  })
+  });
 }
 
 changePopUp();
-
-
-
-
-

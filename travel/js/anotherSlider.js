@@ -6,6 +6,8 @@ const leftArrow = document.querySelector('.slider__arrow-left');
 export let screenWidth = window.screen.availWidth; 
 let itemWidth;
 
+
+
 const getWidth = () => {
   const width = getComputedStyle(sliderItemFirst).width;
   itemWidth = Number(width.slice(0, 3));
@@ -44,6 +46,13 @@ window.onresize = function() {
   screenWidth = window.screen.availWidth;
   diffNum = 0;
 }
+
+export const checkScreenWidth = (wdth) => {
+  console.log(wdth);
+  if (wdth < 800) return true;
+  return false;
+}
+
 
 let diffNum = 0;
 function sliderNext() {
