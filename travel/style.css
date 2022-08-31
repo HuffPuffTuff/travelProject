@@ -570,7 +570,7 @@ main {
   padding-bottom: 254px;
   padding-top: 121px;
   background-size: cover;
-  background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/preview/preview-bg.jpg);
+  background-image: url(./assets/preview/preview-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -638,7 +638,7 @@ main {
 
 @media (max-width: 670px) {
   .preview {
-    background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/preview/mobile__bg-preview.jpg);
+    background-image: url(./assets/preview/mobile__bg-preview.jpg);
   }
 
   .form-p {
