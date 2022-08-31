@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link type="Image/x-icon" href="./assets/favicon.ico" rel="icon">
+  <title>Travel Portal</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__body container">
+
+      <div class="logo__svg">
+        <img src="./assets/preview/logo1.svg" alt="logo">
+        <img class="logo__svg-text" src="./assets/preview/text-logo.svg"
+          alt="text logo">
+      </div>
+
+      <div class="header__burger">
+        <span></span>
+      </div>
+
+      <nav class="header__menu">
+        <img class="menu__close-button" src="./assets/preview/close-menu.svg"
+          alt="close menu">
+        <ul class="header__list">
+          <li><a data-content="How It Works" href="#preview">How It Works</a></li>
+          <li><a data-content="Plan Your Trip" href="#steps">Plan Your Trip</a></li>
+          <li><a data-content="Destinations" href="#destinations">Destinations</a></li>
+          <li class=""><a data-content="Travel Stories" href="#stories">Travel Stories</a></li>
+          <li class="list__hidden"><a class="account" data-content="Account" href="#">Account</a></li>
+          <li class="list__hidden"><a data-content="Social Media" href="#social__media">Social Media</a></li>
+        </ul>
+      </nav>
+
+      <button class="login__button button">Login</button>
+    </div>
+    <div class="login__popup">
+      <form class="popup-form">
+        <legend class="popup__register hidden">Create account</legend>
+        <fieldset class="popup__signin">
+          <legend>Log in to your account</legend>
+          <button class="popup__button facebook"><img
+              src="./assets/popUp/facebook-logo.svg" alt="facebook">Sign In with
+            Facebook</button>
+          <button class="popup__button google"><img
+              src="./assets/popUp/google-logo.svg" alt="google">Sign In with
+            Google</button>
+          <h5><span>or</span></h5>
+        </fieldset>
+        <label>E-mail<br>
+          <input id="email" class="form-input" type="email">
+        </label>
+        <label>Password<br>
+          <input id="password" class="form-input" type="password">
+        </label>
+        <button class="popup__button button-enter">
+          <p class="popup__signin">Sign In</p>
+          <p class="popup__register hidden">Sign Up</p>
+        </button>
+        <a class="popup__signin">Forgot Your Password?</a>
+        <hr>
+        <p class="register">Don't have an account?<a> Register</a></p>
+        <p class="login hidden">Already have an account?<a> Log In</a></p>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="section preview" id="preview">
+      <div class="container">
+        <div class="intro">
+          <h1 class="intro__title">Explore the beauty of the World</h1>
+          <p class="intro__description">Receive personalized recommendations for countries, hotels, activities
+            and more</p>
+          <div class="intro__form">
+            <p class="form-p">What would you like to do?</p>
+            <button class="button section__button-animation">Start Planning</button>
+          </div>
+        </div>
+      </div>
+    </section> <!-- ./preview -->
+
+    <section class="container steps" id="steps">
+      <h2 class="section__title">3 steps to the perfect trip</h2>
+      <div class="steps__items">
+        <div class="steps__item">
+          <a href="#steps">
+            <img class="steps__img" src="./assets/steps/bicycle.svg" alt="bicycle"></a>
+          <p>Tell us what you want to do</p>
+        </div>
+        <div class="steps__item">
+          <a href="#steps">
+            <img class="steps__img" src="./assets/steps/calendar.svg" alt="calendar"></a>
+          <p>Share us preferable dates</p>
+        </div>
+        <div class="steps__item">
+          <a href="#steps">
+            <img class="steps__img" src="./assets/steps/plane.svg" alt="plane"></a>
+          <p>We will give you recommendations</p>
+        </div>
+      </div> <!-- ./steps__items -->
+    </section> <!-- ./steps -->
+
+    <section class="section destinations" id="destinations">
+      <h2 class="section__title">Popular Destinations</h2>
+
+      <div class="slider" id="">
+        <div class="slider__line">
+          <div class="slider__item">
+            <img class="spain" src="./assets/destinations/spain.jpg" alt="spain">
+            <p>Spain</p>
+          </div>
+          <div class="slider__item">
+            <img src="./assets/destinations/usa.jpg" alt="usa">
+            <p>Usa</p>
+          </div>
+          <div class="slider__item">
+            <img src="./assets/destinations/japan.jpg" alt="japan">
+            <p>Japan</p>
+          </div>
+          <div class="slider__item">
+            <img class="spain" src="./assets/destinations/spain.jpg" alt="spain">
+            <p>Spain</p>
+          </div>
+          <div class="slider__item">
+            <img src="./assets/destinations/usa.jpg" alt="usa">
+            <p>Usa</p>
+          </div>
+          <div class="slider__item">
+            <img src="./assets/destinations/japan.jpg" alt="japan">
+            <p>Japan</p>
+          </div>
+          <div class="slider__item">
+            <img class="spain" src="./assets/destinations/spain.jpg" alt="spain">
+            <p>Spain</p>
+          </div>
+        </div>
+
+        <div class="slider__navigation">
+          <div class="slider__arrow-left"></div>
+          <div class="slider__arrow-right"></div>
+          <div class="slider__dots"></div>
+        </div>
+      </div>
+
+      <button class="button destinations-button section__button-animation">
+        <img src="./assets/destinations/arrow.svg" alt="arrow">
+        Find More
+      </button>
+
+    </section> <!-- ./destination -->
+
+    <section class="section stories" id="stories">
+      <h2 class="section__title stories__title">Travel Stories</h2>
+      <div class="stories__bg">
+        <div class="stories__bg-wrapped">
+          <div class="container stories__items">
+            <div class="item__img">
+              <img src="./assets/stories/thailand.jpg" alt="">
+            </div>
+            <div class="item__text">
+              <h3 class="item__title">10 Photos of Attractive Thailand</h3>
+              <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
+              <a data-content="Read More" href="#">Read More</a>
+            </div>
+            <div class="item__img">
+              <img src="./assets/stories/utah.jpg" alt="">
+            </div>
+            <div class="item__text">
+              <h3 class="item__title">Canyonlands National Park, Utah</h3>
+              <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
+              <a data-content="Read More" href="">Read More</a>
+            </div>
+            <div class="item__img">
+              <img src="./assets/stories/snow-mountains.jpg" alt="">
+            </div>
+            <div class="item__text">
+              <h3 class="item__title">I left my heart in the Mountains!</h3>
+              <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
+              <a data-content="Read More" href="">Read More</a>
+            </div>
+            <div class="item__img">
+              <img src="./assets/stories/bus.jpg" alt="">
+            </div>
+            <div class="item__text">
+              <h3 class="item__title">The Longest journey in my life!</h3>
+              <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...</p>
+              <a data-content="Read More" href="#">Read More</a>
+            </div>
+          </div> <!-- ./stories__items -->
+          <button class="button section__button-animation stories__button">
+            <img src="./assets/destinations/arrow.svg" alt="arrow">
+            See More
+          </button>
+        </div> <!-- ./stories__bg-wrapped  -->
+      </div> <!-- ./stories__bg   -->
+    </section> <!-- ./section__stories -->
+  </main>
+
+  <footer class="footer" id="social__media">
+    <div class=" footer__information container">
+      <p class="">All Rights Reserved © Travel Portal</p>
+      <ul class="contacts">
+        <li>
+          <a class="contacts__icon" href="https://www.instagram.com/hokage4.20/">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.46778 0.494892C11.1126 0.419171 11.6371 0.402344 15.827 0.402344C20.0169 0.402344 20.5413 0.420573 22.1848 0.494892C23.8282 0.569211 24.95 0.831432 25.9316 1.21144C26.9594 1.59986 27.8919 2.20704 28.6632 2.9923C29.4484 3.76213 30.0542 4.69322 30.4412 5.72247C30.8226 6.70405 31.0834 7.82584 31.1592 9.46647C31.2349 11.1141 31.2517 11.6386 31.2517 15.8271C31.2517 20.017 31.2335 20.5414 31.1592 22.1863C31.0848 23.8269 30.8226 24.9487 30.4412 25.9303C30.0542 26.9596 29.4474 27.8923 28.6632 28.6632C27.8919 29.4485 26.9594 30.0543 25.9316 30.4413C24.95 30.8227 23.8282 31.0835 22.1876 31.1593C20.5413 31.235 20.0169 31.2518 15.827 31.2518C11.6371 31.2518 11.1126 31.2336 9.46778 31.1593C7.82716 31.0849 6.70536 30.8227 5.72378 30.4413C4.69442 30.0542 3.76179 29.4475 2.9908 28.6632C2.20608 27.893 1.59881 26.9608 1.21135 25.9317C0.83134 24.9501 0.570522 23.8283 0.494801 22.1877C0.419079 20.54 0.402252 20.0156 0.402252 15.8271C0.402252 11.6372 0.420481 11.1127 0.494801 9.46928C0.56912 7.82584 0.83134 6.70405 1.21135 5.72247C1.59938 4.69334 2.20711 3.76117 2.9922 2.99089C3.76209 2.20634 4.69379 1.59908 5.72238 1.21144C6.70395 0.831432 7.82575 0.570613 9.46638 0.494892H9.46778ZM22.06 3.27134C20.4334 3.19702 19.9454 3.1816 15.827 3.1816C11.7086 3.1816 11.2206 3.19702 9.59399 3.27134C8.08938 3.34005 7.27327 3.59106 6.72919 3.80279C6.00984 4.08324 5.49522 4.41558 4.95535 4.95544C4.44359 5.45331 4.04975 6.05941 3.8027 6.72929C3.59096 7.27336 3.33996 8.08947 3.27125 9.59408C3.19693 11.2207 3.18151 11.7087 3.18151 15.8271C3.18151 19.9455 3.19693 20.4335 3.27125 22.0601C3.33996 23.5647 3.59096 24.3808 3.8027 24.9249C4.0495 25.5937 4.44353 26.2009 4.95535 26.6987C5.45315 27.2105 6.06032 27.6046 6.72919 27.8513C7.27327 28.0631 8.08938 28.3141 9.59399 28.3828C11.2206 28.4571 11.7072 28.4725 15.827 28.4725C19.9468 28.4725 20.4334 28.4571 22.06 28.3828C23.5646 28.3141 24.3807 28.0631 24.9248 27.8513C25.6441 27.5709 26.1587 27.2386 26.6986 26.6987C27.2104 26.2009 27.6045 25.5937 27.8513 24.9249C28.063 24.3808 28.314 23.5647 28.3827 22.0601C28.457 20.4335 28.4725 19.9455 28.4725 15.8271C28.4725 11.7087 28.457 11.2207 28.3827 9.59408C28.314 8.08947 28.063 7.27336 27.8513 6.72929C27.5708 6.00993 27.2385 5.49531 26.6986 4.95544C26.2007 4.44372 25.5946 4.04989 24.9248 3.80279C24.3807 3.59106 23.5646 3.34005 22.06 3.27134ZM13.8568 20.5821C14.9571 21.0401 16.1823 21.1019 17.3231 20.757C18.4639 20.412 19.4495 19.6817 20.1117 18.6908C20.7739 17.6999 21.0715 16.5098 20.9537 15.3238C20.8359 14.1378 20.31 13.0295 19.4658 12.1882C18.9277 11.6504 18.277 11.2387 17.5606 10.9825C16.8442 10.7264 16.08 10.6322 15.3229 10.7069C14.5657 10.7816 13.8346 11.0232 13.1821 11.4144C12.5295 11.8055 11.9718 12.3365 11.5491 12.9691C11.1264 13.6016 10.8493 14.3201 10.7375 15.0726C10.6258 15.8252 10.6823 16.5931 10.903 17.3212C11.1237 18.0493 11.5031 18.7194 12.0139 19.2832C12.5246 19.8471 13.154 20.2907 13.8568 20.5821ZM10.2208 10.2209C10.957 9.48467 11.831 8.90067 12.7929 8.50223C13.7548 8.1038 14.7858 7.89872 15.827 7.89872C16.8681 7.89872 17.8991 8.1038 18.861 8.50223C19.8229 8.90067 20.697 9.48467 21.4332 10.2209C22.1694 10.9571 22.7534 11.8311 23.1518 12.793C23.5503 13.7549 23.7553 14.7859 23.7553 15.8271C23.7553 16.8682 23.5503 17.8992 23.1518 18.8611C22.7534 19.823 22.1694 20.697 21.4332 21.4333C19.9463 22.9201 17.9297 23.7554 15.827 23.7554C13.7243 23.7554 11.7076 22.9201 10.2208 21.4333C8.73394 19.9464 7.89863 17.9298 7.89863 15.8271C7.89863 13.7243 8.73394 11.7077 10.2208 10.2209ZM25.5137 9.07945C25.6961 8.90735 25.8422 8.7004 25.9432 8.47084C26.0442 8.24128 26.0982 7.99379 26.1018 7.74301C26.1055 7.49224 26.0588 7.24328 25.9645 7.01087C25.8702 6.77847 25.7303 6.56734 25.5529 6.39C25.3756 6.21265 25.1644 6.07269 24.932 5.97841C24.6996 5.88412 24.4507 5.83742 24.1999 5.84108C23.9491 5.84473 23.7016 5.89867 23.4721 5.99969C23.2425 6.10071 23.0356 6.24677 22.8635 6.4292C22.5288 6.78402 22.3455 7.2553 22.3526 7.74301C22.3597 8.23073 22.5566 8.69647 22.9015 9.04137C23.2464 9.38628 23.7122 9.58318 24.1999 9.59029C24.6876 9.5974 25.1589 9.41416 25.5137 9.07945Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://rs.school/js-stage0/">
+            <img src="./assets/footer/rs_school_js.svg" alt="rs school"
+              height="32">
+          </a>
+        </li>
+        <li>
+          <a class="contacts__icon" href="https://github.com/HuffPuffTuff">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 1000.000000 410.000000"
+              preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,410.000000) scale(0.100000,-0.100000)" stroke="none">
+                <path
+                  d="M1398 3220 c-119 -25 -149 -35 -253 -88 -70 -36 -108 -64 -170 -127 -206 -205 -295 -491 -295 -943 0 -210 11 -325 45 -458 101 -397 347 -616 760-673 112 -16 377 -14 478 4 141 25 347 99 404 147 11 8 13 123 11 587 l-3 576-395 0 -395 0 -3 -199 c-2 -138 1 -203 9 -212 9 -11 46 -14 160 -14 l149 0 0-214 0 -213 -37 -6 c-255 -39 -418 -3 -532 118 -101 108 -148 259 -158 506 -17 405 95 657 329 739 141 49 391 47 586 -5 78 -21 122 -24 122 -9 0 2 18 80 40 174 22 94 40 182 40 196 0 21 -9 29 -53 50 -130 59 -301 84 -567 83 -139 0 -207 -5 -272 -19z" />
+                <path
+                  d="M4502 3148 c-17 -17 -17 -2159 0 -2176 17 -17 449 -17 466 0 9 9 12 127 12 470 l0 458 310 0 310 0 0 -459 c0 -377 2 -461 14 -470 9 -8 82 -11 242 -9 l229 3 0 1095 0 1095 -230 3 c-207 2 -231 1 -242 -15 -10 -13 -13 -111 -13 -410 l0 -393 -310 0 -310 0 0 398 c0 296 -3 401 -12 410 -17 17 -449 17 -466 0z" />
+                <path
+                  d="M7885 3148 c-3 -7 -4 -501 -3 -1098 l3 -1085 171 -3 172 -2 11 31 c6 18 11 43 11 56 l0 23 40 -29 c186 -135 571 -162 759 -55 139 80 230 256 261 506 19 151 8 491 -19 593 -78 296 -273 438 -581 421 -108 -5 -222 -31 -291 -66 -21 -11 -41 -20 -44 -20 -3 0 -5 161 -5 358 0 265 -3 361 -12 370 -18 18 -467 17 -473 0z m826 -1061 c54 -29 92 -88 115 -177 22 -85 15 -377 -10 -458 -36 -112 -126 -156 -275 -133 -41 6 -99 22 -128 36 l-53 24 0 334 0 334 28 13 c115 55 249 66 323 27z" />
+                <path
+                  d="M2756 3095 c-56 -20 -107 -65 -138 -120 -137 -250 152 -511 389 -352 35 24 56 49 81 97 31 60 34 71 30 135 -7 111 -61 190 -158 234 -53 24 -146 27 -204 6z" />
+                <path
+                  d="M3487 2884 c-4 -4 -7 -103 -7 -220 l0 -212 -112 -27 c-62 -15 -119 -32 -125 -38 -18 -13 -18 -298 -1 -315 8 -8 50 -12 125 -12 l113 0 0 -350 c0 -387 7 -456 60 -560 35 -69 113 -143 186 -177 30 -14 94 -32 142 -40 163 -29 423 1 436 50 10 37 7 297 -4 317 -9 17 -22 19 -113 17 -115 -2 -163 14 -201 66 -20 27 -21 43 -24 353 l-3 324 159 0 c109 0 162 4 170 12 8 8 12 66 12 195 0 170 -1 183 -19 193 -11 5 -86 10 -170 10 l-151 0 -2 208 -3 207 -231 3 c-127 1 -233 -1 -237 -4z" />
+                <path
+                  d="M2620 2450 c-20 -20 -20 -33 -20 -727 0 -551 3 -714 13 -733 l13 -25 218 -3 c153 -2 223 1 232 9 12 10 14 134 14 745 0 715 0 734 -19 744 -12 6 -103 10 -225 10 -193 0 -207 -1 -226 -20z" />
+                <path
+                  d="M6286 2444 c-10 -26 -6 -1054 4 -1127 29 -196 120 -312 292 -368 66 -22 90 -24 253 -24 170 1 185 2 265 29 47 16 116 44 154 63 37 19 69 33 71 31 1 -2 6 -21 12 -43 l9 -40 153 -3 c105 -2 158 1 167 9 12 10 14 131 14 738 0 399 -4 732 -8 739 -7 9 -61 12 -238 10 l-229 -3 -5 -535 -5 -535 -55 -27 c-152 -74 -310 -55 -353 41 -9 18 -14 181 -17 541 l-5 515 -236 3 c-209 2 -237 1 -243 -14z" />
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div class="shading"></div>
+
+
+  <script src="./js/score.js"></script>
+  <script type="module" src="./js/anotherSlider.js"></script>
+  <script type="module" src="./js/burger.js"></script>
+  
+</body>
+
+</html>
