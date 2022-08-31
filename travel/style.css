@@ -951,12 +951,12 @@ span.slider-dot {
   }
 
   .slider__arrow-left:hover {
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider-active.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider-active.svg") no-repeat;
     transform: rotate(180deg);
   }
 
   .slider__arrow-right:hover {
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider-active.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider-active.svg") no-repeat;
     transform: rotate(0deg);
   }
   .slider__dots {
