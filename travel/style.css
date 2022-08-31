@@ -1009,7 +1009,7 @@ span.slider-dot {
 }
 
 .stories__bg {
-  background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/stories/stories-bg.jpg);
+  background-image: url(./assets/stories/stories-bg.jpg);
   padding-bottom: 62px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1155,7 +1155,7 @@ span.slider-dot {
 
 @media (max-width: 800px) {
   .stories__bg {
-    background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/stories/stories-bg-mobile.jpg);
+    background-image: url(./assets/stories/stories-bg-mobile.jpg);
   }
 
   .stories__bg-wrapped {
