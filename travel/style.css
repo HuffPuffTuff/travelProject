@@ -938,7 +938,7 @@ span.slider-dot {
     position: absolute;
     cursor: pointer;
     z-index: 32;
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider.svg") no-repeat;
   }
 
   .slider__arrow-left {
