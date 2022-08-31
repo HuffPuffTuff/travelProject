@@ -938,7 +938,7 @@ span.slider-dot {
     position: absolute;
     cursor: pointer;
     z-index: 32;
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider.svg") no-repeat;
   }
 
   .slider__arrow-left {
@@ -951,12 +951,12 @@ span.slider-dot {
   }
 
   .slider__arrow-left:hover {
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider-active.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider-active.svg") no-repeat;
     transform: rotate(180deg);
   }
 
   .slider__arrow-right:hover {
-    background: url("/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/destinations/arrow-slider-active.svg") no-repeat;
+    background: url("./assets/destinations/arrow-slider-active.svg") no-repeat;
     transform: rotate(0deg);
   }
   .slider__dots {
@@ -1009,7 +1009,7 @@ span.slider-dot {
 }
 
 .stories__bg {
-  background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/stories/stories-bg.jpg);
+  background-image: url(./assets/stories/stories-bg.jpg);
   padding-bottom: 62px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1155,7 +1155,7 @@ span.slider-dot {
 
 @media (max-width: 800px) {
   .stories__bg {
-    background-image: url(/huffpufftuff-JSFEPRESCHOOL2022Q2/travel/assets/stories/stories-bg-mobile.jpg);
+    background-image: url(./assets/stories/stories-bg-mobile.jpg);
   }
 
   .stories__bg-wrapped {
