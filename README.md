@@ -1,2 +1,2 @@
 # travelProject
-https://huffpufftuff.github.io/travel-project/travel/
+https://noidorus.github.io/travel-project/travel/
